@@ -1,4 +1,4 @@
-.venv/
+﻿.venv/
 venv/
 __pycache__/
 *.py[cod]
@@ -10,4 +10,4 @@ __pycache__/
 .idea/
 .vscode/
 FileStruct.md
-.repos/
+repos/
