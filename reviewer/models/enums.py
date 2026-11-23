@@ -9,3 +9,12 @@ class ChunkTypeEnum(Enum):
     
 class SupportedLanguageEnum(Enum):
     PYTHON = ".py"
+    MARKDOWN = ".md"
+
+
+
+def valid_language(extension: str) -> SupportedLanguageEnum | None:
+    try:
+        return SupportedLanguageEnum(extension)
+    except ValueError:
+        return None
