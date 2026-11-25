@@ -6,7 +6,7 @@ from reviewer.models.repo import RepoFile
 from reviewer.models.enums import valid_language
 
 REPO_URL = "https://github.com/"
-CACHE_DIR = Path.home() / ".reviewer" / "repos"
+CACHE_DIR = Path(__file__).resolve().parent.parent / "repos"
 
 # owner/repo: letters, digits, '-', '_' and '.', exactly one slash
 SLUG_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
